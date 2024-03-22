@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hero */
+
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -60,4 +62,30 @@ h1 {
   position: absolute;
   left: 50px;
   bottom: 50px;
+}
+
+/* Cards */
+
+.cardimg-style {
+  box-shadow: 5px 3px 2rem #061621;
+}
+
+.info-btn {
+  background: #153656;
+  color: #faf9f6;
+}
+
+.card {
+  margin: 10px 10px 10px 10px;
+  border-bottom: 0.3rem solid #061621;
+  /* box-shadow: 5px 3px 2rem rgba(217, 217, 217, 0.251);  */
+}
+
+.card-h5 {
+  margin: .5rem;
+  color: #ca2825;
+}
+
+.card-p {
+  #153656
 }
