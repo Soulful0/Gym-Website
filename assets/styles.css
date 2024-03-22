@@ -5,15 +5,19 @@
 .nav-list {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #faf9f6;
   font-size: 1rem;
   list-style: none;
+}
+
+h1 {
+  color: #faf9f6;
 }
 
 .header-background {
   background-image: url(../img/dumbell.jpg);
 
-  border-bottom: 0.3rem solid #b32522;
+  border-bottom: 0.3rem solid #061621;
 
   position: relative;
   background-position: center;
@@ -40,16 +44,19 @@
 
 .btn-join {
   margin-left: 30px;
-  background: #153656;
-  border: none;
-  color: #fff;
+  background: #b32522;
+  /* border: solid 1px #061621; */
+  color: #faf9f6;
   padding: 5px 10px 5px 10px;
 }
 
 #tag {
   font-size: 1.2rem;
   font-weight: 400;
-  color: white;
+  color: #faf9f6;
+
+  text-shadow: 5px 3px #061621;
+
   position: absolute;
   left: 50px;
   bottom: 50px;
