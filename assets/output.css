@@ -1664,8 +1664,6 @@ h1 {
 }
 
 .submit-btn {
-  display: inline-block;
-  width: 23.2rem;
   padding: 0.5rem;
   letter-spacing: 0.05rem;
   text-align: center;
