@@ -114,3 +114,44 @@ h1 {
 
   line-height: 1.2rem;
 }
+
+/* Contact */
+
+.form-wrapper {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 5px 3px 2rem #0616211e;
+}
+
+.free-style {
+  border-bottom: 0.3rem solid rgb(229, 183, 66);
+}
+
+.input-wrap {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-style {
+  padding: 0.5rem;
+}
+
+.message-style {
+  height: 5rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 23.2rem;
+  padding: 0.5rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #2765a4;
+  color: #faf9f6;
+}
