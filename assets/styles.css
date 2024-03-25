@@ -5,10 +5,10 @@
 /* Hero */
 
 .nav-list {
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   color: #faf9f6;
-  font-size: 1rem;
   list-style: none;
 }
 
@@ -53,8 +53,8 @@ h1 {
 }
 
 #tag {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 500;
   color: #faf9f6;
 
   text-shadow: 5px 3px #061621;
@@ -66,10 +66,6 @@ h1 {
 
 /* Cards */
 
-.cardimg-style {
-  box-shadow: 5px 3px 2rem #061621;
-}
-
 .info-btn {
   background: #153656;
   color: #faf9f6;
@@ -78,14 +74,43 @@ h1 {
 .card {
   margin: 10px 10px 10px 10px;
   border-bottom: 0.3rem solid #061621;
+  box-shadow: 5px 3px 2rem #0616212c;
+
+  /* box-shadow: 5px 3px 2rem #06162140; */
+
   /* box-shadow: 5px 3px 2rem rgba(217, 217, 217, 0.251);  */
 }
 
 .card-h5 {
-  margin: .5rem;
+  margin: 0.5rem;
   color: #67778a;
 }
 
 .card-p {
-  #153656
+  color: #222222;
+}
+
+/* About */
+
+.about-wrapper {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 5px 3px 2rem #0616211e;
+}
+
+.h2-el1 {
+  color: #b32522;
+  padding: 0.3rem;
+}
+
+.h2-el2 {
+  color: #153656;
+  padding-bottom: 1rem;
+}
+
+.about-p {
+  font-weight: 400;
+  padding: 0.5rem;
+
+  line-height: 1.2rem;
 }
