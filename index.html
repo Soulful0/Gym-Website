@@ -21,27 +21,36 @@
   </head>
   <!-- HERO -->
   <body>
-    <div class="header-background">
-      <header id="header">
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li>
-              <a><h1 class="font-bold text-xl">Gains Fitness</h1></a>
-            </li>
-            <div class="list-item">
-              <li class="nav-al">
-                <a href="#about">About</a>
+    <!-- <div class="header-background"> -->
+      <header id="header" class="hero">
+        <div class="hero-container">
+          <div class="hero-media-wrapper" >
+            <video class="hero-media" playsinline="" autoplay="" loop=""><source src=".//img/0326.mp4" type="video/mp4"></video>
+          </div>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li>
+                <div class="hero-logo">
+                  <a>
+                    <img src=".//img/Gainsfitnesslogo_white.svg"></img>
+                  </a>
+                  <!-- <a><h1 class="font-bold text-xl">Gains Fitness</h1></a> -->
+                </div>
               </li>
-              <li class="nav-al">
-                <a href="#contact">Contact</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-        <button href="contact" class="btn-join">Join Us</button>
-        <p id="tag">Unlock Your Potential.</p>
+              <div class="list-item">
+                <li class="nav-al">
+                  <a href="#about">About</a>
+                </li>
+                <li class="nav-al">
+                  <a href="#contact">Contact</a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+          <button href="contact" class="btn-join">Join Us</button>
+        </div>
       </header>
-    </div>
+    <!-- </div> -->
     <main>
       <!-- ABOUT -->
       <section>
@@ -193,7 +202,6 @@
           </div>
         </article>
       </section>
-      <!-- CONTACT (FORM) -->
       <section>
         <article>
           <div class="form-wrapper">
@@ -201,12 +209,13 @@
             <div class="input-wrap">
               <label for="searchh" class="label-style">Search:</label>
               <input type="search" id="search" class="input-style" />
-            <button class="submit-btn ">Submit</button>
-          </form>
+              <button class="submit-btn ">Submit</button>
+            </form>
+          </div>
         </div>
-      </div>
-        </article>
-      </section>
+      </article>
+    </section>
+    <!-- CONTACT/FOOTER -->
       <footer class="footer-style">
         <div class="contact-wrapper">
           <h3 id="contact" class="font-bold contact-space text-lg"><em>Contact</em></h3>

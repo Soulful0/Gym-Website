@@ -4,33 +4,64 @@
 
 /* Hero */
 
+.hero {
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  isolation: isolate;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+
+  border-bottom: 0.3rem solid #061621a1;
+}
+
+.hero-container {
+  height: 100%;
+  margin-bottom: auto;
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+
+.hero-media-wrapper {
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.hero-media {
+  z-index: -1;
+  height: 100%;
+  object-fit: cover;
+  object-position: 36%;
+  width: 100%;
+}
+
+.navigation {
+  position: relative;
+  padding: 20px;
+}
+
 .nav-list {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   color: #faf9f6;
   list-style: none;
+  z-index: 10;
 }
 
-h1 {
-  color: #faf9f6;
-}
-
-.header-background {
-  background-image: url(../img/dumbell.jpg);
-
-  border-bottom: 0.3rem solid #061621;
-
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 90svh;
-  height: 90vh;
-}
-
-.navigation {
-  padding: 20px;
+.hero-logo {
+  display: flex;
+  height: 120px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 120px;
+  z-index: 1;
 }
 
 .list-item {
@@ -50,22 +81,13 @@ h1 {
 
 .btn-join {
   margin-left: 30px;
-  background: #b32522;
-  /* border: solid 1px #061621; */
+  background: #98201e;
   color: #faf9f6;
-  padding: 5px 10px 5px 10px;
-}
-
-#tag {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #faf9f6;
-
-  text-shadow: 5px 3px #061621;
+  padding: 8px 13px 8px 13px;
+  border-radius: 7px;
 
   position: absolute;
-  left: 50px;
-  bottom: 50px;
+  bottom: 30px;
 }
 
 /* Cards */
@@ -79,10 +101,6 @@ h1 {
   margin: 10px 10px 10px 10px;
   border-bottom: 0.3rem solid #061621;
   box-shadow: 5px 3px 2rem #0616212c;
-
-  /* box-shadow: 5px 3px 2rem #06162140; */
-
-  /* box-shadow: 5px 3px 2rem rgba(217, 217, 217, 0.251);  */
 }
 
 .card-h5 {
