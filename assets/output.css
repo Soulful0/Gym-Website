@@ -1552,8 +1552,8 @@ h1 {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 60svh;
-  height: 60vh;
+  height: 90svh;
+  height: 90vh;
 }
 
 .navigation {
@@ -1564,6 +1564,10 @@ h1 {
   align-items: end;
   display: flex;
   flex-direction: row;
+  gap: 10px;
+}
+
+.nav-list {
   gap: 20px;
 }
 
@@ -1659,8 +1663,8 @@ h1 {
   padding: 0.5rem;
 }
 
-.message-style {
-  height: 5rem;
+.input-style {
+  margin-bottom: 1rem;
 }
 
 .submit-btn {
@@ -1673,6 +1677,22 @@ h1 {
   cursor: pointer;
   background-color: #2765a4;
   color: #faf9f6;
+}
+
+/* FOOTER */
+
+.footer-style {
+  color: #faf9f6;
+  background-color: #153656;
+}
+
+.contact-wrapper {
+  padding: 1.6rem;
+  box-shadow: 5px 3px 2rem #0616211e;
+}
+
+.footer-space {
+  margin-bottom: 2rem;
 }
 
 .hover\:border-gray-300:hover {

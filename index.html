@@ -30,19 +30,35 @@
             </li>
             <div class="list-item">
               <li class="nav-al">
-                <a>About</a>
+                <a href="#about">About</a>
               </li>
               <li class="nav-al">
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </div>
           </ul>
         </nav>
-        <button id="contact" class="btn-join">Join Us</button>
+        <button href="contact" class="btn-join">Join Us</button>
         <p id="tag">Unlock Your Potential.</p>
       </header>
     </div>
     <main>
+      <!-- ABOUT -->
+      <section>
+        <article>
+          <div class="about-wrapper">
+            <h2 id="about" class="h2-el1 text-xl font-bold">About</h2>
+            <h2 class="h2-el2 text-3xl font-bold">Our Mission:</h2>
+            
+            <p class="about-p">
+              Our mission is to provide a safe and positive environment for all
+              types of gym goers. From those just starting out, to veterans of
+              the field. From the gymnasts, to the body builders. No matter who
+              you are, you have a home here at Gains Fitness.
+            </p>
+          </div>
+        </article>
+      </section>
       <section>
         <!-- CARDS -->
         <article>
@@ -51,9 +67,8 @@
             <a>
               <img
                 class="cardimg-style"
-                src="./img/weighttraining.jpg"
-                alt="Man lifting dumbells doing a pushup
-              workout for chest and tricepts"
+                src="./img/calisthenics.jpg"
+                alt="Man doing a front lever on gymnast floor posts"
               />
             </a>
             <div class="p-5">
@@ -61,12 +76,10 @@
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
                 >
-                  Weight Training
+                  Calisthenics
                 </h5>
               </a>
-              <p class="card-p mb-3">
-                Professional weighted equiptment and machines at your desposal.
-              </p>
+              <p class="card-p mb-3">Gymnast friendly equipment</p>
               <a
                 href="#contact"
                 class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
@@ -95,8 +108,9 @@
             <a>
               <img
                 class="cardimg-style"
-                src="./img/calisthenics.jpg"
-                alt="Man doing a front lever on gymnast floor posts"
+                src="./img/weighttraining.jpg"
+                alt="Man lifting dumbells doing a pushup
+              workout for chest and tricepts"
               />
             </a>
             <div class="p-5">
@@ -104,10 +118,12 @@
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
                 >
-                  Calisthenics
+                  Weight Training
                 </h5>
               </a>
-              <p class="card-p mb-3">Gymnast friendly equiptment</p>
+              <p class="card-p mb-3">
+                Professional weighted equipment and machines at your disposal.
+              </p>
               <a
                 href="#contact"
                 class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
@@ -177,57 +193,33 @@
           </div>
         </article>
       </section>
-      <!-- ABOUT -->
-      <section>
-        <article>
-          <div class="about-wrapper">
-            <h2 id="about" class="h2-el1 text-xl font-bold">About</h2>
-            <h2 class="h2-el2 text-3xl font-bold">Our Mission:</h2>
-
-            <p class="about-p">
-              Our mission is to provide a safe and positive environment for all
-              types of gym goers. From those just starting out, to veterans of
-              the field. From the gymnasts, to the body builders. No matter who
-              you are, you have a home here at Gains Fitness.
-            </p>
-          </div>
-        </article>
-      </section>
       <!-- CONTACT (FORM) -->
       <section>
         <article>
           <div class="form-wrapper">
-            <h2 id="#about" class="h2-el1 text-xl font-bold">Contact</h2>
-              <h2 class="h2-el2 text-3xl font-bold">Request a <span class="free-style">Free</span> Training!</h2>
+            <h2 class="h2-el1 text-xl font-bold">Exercise Search</h2>
             <div class="input-wrap">
-              <label for="full-name" class="label-style">Full Name:</label>
-              <input type="text" id="full-name" class="" />
-            </div>
-            <div class="input-wrap">
-              <label for="email" class="label-style">Email:</label>
-              <input
-                type="email"
-                id="email"
-                class=""
-                placeholder="email@gainsfitness.com"
-                required
-              />
-            </div>
-            <div class="input-wrap">
-              <label class="label-style" for="content">Message:</label>
-            <textarea
-              type="text"
-              id="content"
-              name="content"
-              rows="3"
-            ></textarea>
-            </div>
+              <label for="searchh" class="label-style">Search:</label>
+              <input type="search" id="search" class="input-style" />
             <button class="submit-btn ">Submit</button>
           </form>
         </div>
       </div>
         </article>
       </section>
+      <footer class="footer-style">
+        <div class="contact-wrapper">
+        <h4 id="contact" class="font-bold">Gains Fitness LLC</h4>
+        <p>206 Alice In Chains Ave</p>
+        <p class="footer-space">Dallas</p>
+        
+        <p class="footer-space">Map (temp)</p>
+
+        <p>E: gainsfitness@realemail.com</p>
+        <p class="footer-space">T: 555-555-5555</p>
+<p>© 2023 GAINS FITNESS LLC / 206 ALICE IN CHAINS AVE / DALLAS / T 555-555-5555 / E gainsfitness@realemail.com / PRIVACY POLICY</p>
+        </div>
+      </footer>
     </main>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
