@@ -8,7 +8,7 @@
   background-color: #faf9f6;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 85vh;
   isolation: isolate;
   justify-content: flex-end;
   overflow: hidden;
@@ -93,14 +93,8 @@
 /* Cards */
 
 .info-btn {
-  background: #153656;
+  background: #153556e5;
   color: #faf9f6;
-}
-
-.card {
-  margin: 10px 10px 10px 10px;
-  border-bottom: 0.3rem solid #061621;
-  box-shadow: 5px 3px 2rem #0616212c;
 }
 
 .card-h5 {
@@ -110,6 +104,23 @@
 
 .card-p {
   color: #222222;
+}
+
+.card {
+  margin: 10px 10px 10px 10px;
+  border-bottom: 0.3rem solid #061621;
+  box-shadow: 5px 3px 2rem #0616212c;
+}
+
+.cardimg-style {
+  padding: 0.6rem;
+}
+
+/* Parallax */
+
+.card--media-container {
+  overflow: hidden;
+  width: 100%;
 }
 
 /* About */
@@ -172,7 +183,7 @@
   border: none;
   cursor: pointer;
 
-  background-color: #2765a4;
+  background-color: #153556e5;
   color: #faf9f6;
 }
 

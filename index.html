@@ -21,7 +21,6 @@
   </head>
   <!-- HERO -->
   <body>
-    <!-- <div class="header-background"> -->
       <header id="header" class="hero">
         <div class="hero-container">
           <div class="hero-media-wrapper" >
@@ -47,10 +46,9 @@
               </div>
             </ul>
           </nav>
-          <button href="contact" class="btn-join">Join Us</button>
+          <button class="btn-join"><a href="#join-us">Join Us</a></button>
         </div>
       </header>
-    <!-- </div> -->
     <main>
       <!-- ABOUT -->
       <section>
@@ -68,19 +66,21 @@
           </div>
         </article>
       </section>
+      <!-- CARDS -->
       <section>
-        <!-- CARDS -->
         <article>
           <!-- Card 1 -->
           <div class="card">
-            <a>
+            <div class="card--media-container">
+            <figure>
               <img
-                class="cardimg-style"
+                class="cardimg-style parallax1 img1"
                 src="./img/calisthenics.jpg"
                 alt="Man doing a front lever on gymnast floor posts"
               />
-            </a>
-            <div class="p-5">
+            </figure>
+          </div>
+            <div class="p-5 about--intro">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -112,16 +112,19 @@
               </a>
             </div>
           </div>
+        
           <!-- Card 2 -->
           <div class="card">
-            <a>
+            <div class="card--media-container">
+            <figure>
               <img
-                class="cardimg-style"
+                class="cardimg-style parallax2 img3"
                 src="./img/weighttraining.jpg"
                 alt="Man lifting dumbells doing a pushup
               workout for chest and tricepts"
               />
-            </a>
+            </figure>
+            </div>
             <div class="p-5">
               <a>
                 <h5
@@ -158,13 +161,15 @@
           </div>
           <!-- Card 3 -->
           <div class="card">
-            <a>
+            <div class="card--media-container">
+            <figure>
               <img
-                class="cardimg-style"
+                class="cardimg-style parallax3 img3"
                 src="./img/personaltrainer.jpg"
                 alt="Man training woman in the gym"
               />
-            </a>
+            </figure>
+            </div>
             <div class="p-5">
               <a>
                 <h5
@@ -202,19 +207,46 @@
           </div>
         </article>
       </section>
+      <!-- SEARCH BAR -->
       <section>
         <article>
           <div class="form-wrapper">
             <h2 class="h2-el1 text-xl font-bold">Exercise Search</h2>
             <div class="input-wrap">
-              <label for="searchh" class="label-style">Search:</label>
+              <label for="search" class="label-style">Search:</label>
               <input type="search" id="search" class="input-style" />
-              <button class="submit-btn ">Submit</button>
+              <button class="submit-btn">Search</button>
             </form>
           </div>
         </div>
       </article>
     </section>
+    <!-- SIGN UP FORM -->
+    <section>
+      <article>
+        <div class="form-wrapper">
+          <h2 id="join-us" class="h2-el1 text-xl font-bold">Sign Up Form</h2>
+          <div class="input-wrap">
+            <label for="text" class="label-style">Full Name:</label>
+            <input type="text" class="input-style"/>
+            <label for="email" class="label-style">Email:</label>
+            <input type="email" class="input-style" placeholder="gainsfitness@realemail.com"/>
+            <label for="text" class="label-style">Title:</label>
+            <input type="text" class="input-style"/>
+            <label class="label-style" for="content">Message:</label>
+            <textarea
+            class="input-style"
+              type="text"
+              id="content"
+              name="content"
+              rows="3"
+            ></textarea>
+            <button class="submit-btn ">Submit</button>
+          </form>
+        </div>
+      </div>
+    </article>
+  </section>
     <!-- CONTACT/FOOTER -->
       <footer class="footer-style">
         <div class="contact-wrapper">
@@ -233,5 +265,14 @@
     </main>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax1');
+        let scrollPosition = window.pageYOffset;
+
+        parallax.style.transform = 'translateY(' + scrollPosition *
+        .07 + 'px)';
+      })
+    </script>
   </body>
 </html>
