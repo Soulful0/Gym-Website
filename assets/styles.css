@@ -206,3 +206,8 @@
 .footer-space {
   margin-bottom: 2rem;
 }
+
+/* Modal */
+.flex-adj {
+  /* display: flex; */
+}
