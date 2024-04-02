@@ -1,0 +1,35 @@
+@media screen and (min-width: 1011px) {
+  .flex-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-direction: row; */
+  }
+  .img-container {
+    width: 31.2vw;
+    height: 200px;
+  }
+  .grid-bigscreen {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+  }
+  .border-section {
+    margin-left: 5px;
+    margin-right: 10px;
+
+    border-bottom: 0.3rem solid #061621;
+  }
+  .gains-absolute {
+    position: absolute;
+    bottom: -1110px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .card {
+    border-bottom: 0.3rem solid #061621;
+  }
+  .gains-absolute {
+    display: none;
+  }
+}
