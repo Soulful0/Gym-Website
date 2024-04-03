@@ -114,7 +114,8 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: start;
 }
 
 .cardimg-style {
@@ -137,6 +138,7 @@
 .card--media-container {
   overflow: hidden;
   width: 100%;
+  height: 300px;
 }
 
 /* About */
@@ -221,4 +223,13 @@
 
 .footer-space {
   margin-bottom: 2rem;
+}
+
+.credit-style {
+  border-bottom: 0.1rem solid #faf9f6;
+}
+
+/* Modal */
+.flex-adj {
+  /* display: flex; */
 }
