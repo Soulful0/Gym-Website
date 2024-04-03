@@ -20,8 +20,21 @@
   }
   .gains-absolute {
     position: absolute;
-    bottom: -1110px;
-    left: 20px;
+    bottom: -1310px;
+    left: 200px;
+  }
+  .card--media-container {
+    height: 435px;
+  }
+  .nav-al {
+    font-size: 2rem;
+  }
+  .logo-style {
+    scale: 1.5;
+    margin: 20px;
+  }
+  .btn-join {
+    scale: 1.3;
   }
 }
 
@@ -31,5 +44,8 @@
   }
   .gains-absolute {
     display: none;
+  }
+  .card--media-container {
+    height: 500px;
   }
 }
