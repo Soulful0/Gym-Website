@@ -1,0 +1,111 @@
+/*
+--- INSPIRATION WEBSITE
+https://opulentstudio.framer.website/
+
+https://brownfoliotemplate.webflow.io/
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 500
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Large: 1.6
+
+- Letter spacing
+
+--- 02 COLORS
+
+- Primary: 
+
+Deep Blue: #153656
+Rich Red: #B32522
+Very Dark Blue (almost black): #061621
+
+- Tints:
+
+#67778a
+
+- Shades:
+
+- Accents: 
+
+Warm White for text and accents to brighten the design: #FAF9F6
+
+- Greys
+
+Light Grey for contrast and breathability: #D9D9D9
+Mid-tone Grey to bridge the dark and light tones: #7F8C8D
+
+
+Applying the Color Scheme
+Backgrounds: Use #061621 for a deep, engaging background on web pages or app interfaces. 
+It provides a strong foundation that allows your primary and secondary colors to truly pop.
+
+Text and Accents: 
+Utilize the warm white (#FAF9F6) for text, which will stand out crisply against the darker background colors. 
+For secondary text or less important elements, the light and mid-tone greys (#D9D9D9 and #7F8C8D) can offer a softer contrast.
+
+Interactive Elements (Buttons, Links, etc.): 
+The deep blue (#153656) and rich red (#B32522) can be used for buttons, links, or other interactive elements. 
+Consider using the rich red for call-to-action items due to its ability to grab attention.
+
+Borders and Separators: Mid-tone grey (#7F8C8D) works well for borders and separators,
+ providing definition without overwhelming the design with too much contrast.
+
+Creating Balance
+For a design that feels balanced and cohesive, use your very dark blue (#061621) 
+as the base color for backgrounds.
+Employ the deep blue (#153656) and rich red (#B32522) strategically to highlight 
+important features or to draw attention to key elements like buttons or icons.
+Use the greys and warm white for text and less focal components to ensure readability and 
+visual comfort.
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default:
+Medium:
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+#f0eee9
+
+
+Primary Colors:
+
+Secondary Colors:
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #e5e5e0;
+}
+
+body {
+  font-family: "Roboto+Serif", sans-serif;
+}
+
+h1 {
+  color: #faf9f6;
+}

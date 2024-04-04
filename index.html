@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/general.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Khojki&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <title>Gains Fitness</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <!-- HERO -->
+  <body>
+      <header id="header" class="hero">
+        <div class="hero-container">
+          <div class="hero-media-wrapper" >
+            <!-- <iframe class="hero-media" src=".//img/0326.mp4" playsinline="" allow="muted; autoplay;" loop=""></iframe> -->
+            <video class="hero-media" playsinline="" autoPlay muted loop="">
+              <source src=".//img/0326.mp4" type="video/mp4"/>
+            </video>
+          </div>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li>
+                <div class="hero-logo">
+                  <a>
+                    <img class="logo-style" src=".//img/Gainsfitnesslogo_white.svg"></img>
+                  </a>
+                  <!-- <a><h1 class="font-bold text-xl">Gains Fitness</h1></a> -->
+                </div>
+              </li>
+              <div class="list-item">
+                <li class="nav-al">
+                  <a href="#about">About</a>
+                </li>
+                <li class="nav-al">
+                  <a href="#contact">Contact</a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+          <button class="btn-join"><a href="#join-us">Join Us</a></button>
+        </div>
+      </header>
+    <main>
+      <!-- ABOUT -->
+      <section>
+        <article>
+          <div class="about-wrapper">
+            <h2 id="about" class="h2-el1 text-xl font-bold">About</h2>
+            <h2 class="h2-el2 text-3xl font-bold">Our Mission:</h2>
+            
+            <p class="about-p">
+              Our mission is to provide a safe and positive environment for all
+              types of gym goers. From those just starting out, to veterans of
+              the field. From the gymnasts, to the body builders. No matter who
+              you are, you have a home here at Gains Fitness.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- CARDS -->
+      <section>
+      <article class="flex-card-wrapper border-section">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card--media-container">
+            <figure class="img-container">
+              <img
+                class="cardimg-style parallax1 img1"
+                src="./img/calisthenics.jpg"
+                alt="Man doing a front lever on gymnast floor posts"
+              />
+            </figure>
+          </div>
+            <div class="card-txt-align p-5 about--intro">
+
+              <div class="a-p-wrap">
+              <a>
+                <h5
+                  class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
+                >
+                  Calisthenics
+                </h5>
+              </a>
+              <p class="card-p mb-3">Gymnast friendly equipment asuhdfpiusahdfpsahdfpiasasdfhaspodhif</p>
+            </div>
+
+              <a
+                href="#contact"
+                class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
+              >
+                More Info
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card--media-container">
+            <figure class="img-container">
+              <img
+              class="cardimg-style parallax2 img3"
+              src="./img/weighttraining.jpg"
+              alt="Man lifting dumbells doing a pushup
+              workout for chest and tricepts"
+              />
+            </figure>
+            </div>
+            <div class="card-txt-align p-5">
+              <a>
+                <h5
+                  class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
+                >
+                  Weight Training
+                </h5>
+              </a>
+              <p class="card-p mb-3">
+              </p>
+              <a data-modal-target="default-modal" data-modal-toggle="default-modal"
+              
+                class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
+              >
+                More Info
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+            </div>
+            <!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Select a body part to see the many different excercises you can do: 
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+           <div class="p-4 md:p-5 space-y-4 flex-adj">
+
+<form class="max-w-sm mx-auto" id="excercise-form">
+  <script src="script.js"></script>
+   <select id="select-excercises" class="py-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"> 
+    <option value="">Choose a body part:</option>
+    <option value="chest">Chest</option>
+    <option value="biceps">Biceps</option>
+    <option value="traps">Traps</option>
+    <option value="glutes">Glutes</option>
+  </select>
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Type
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Equipment
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Difficulty
+                </th>
+            </tr>
+        </thead>
+    <tbody id="instructions"  scope="col" class="content-start px-6 py-4 font-medium text-gray-900 dark:text-white" >
+      <!--Populated from the javascript file-->
+    </tbody>
+  </table>
+</form>
+
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">OK</button>
+                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">CANCEL</button>
+            </div>
+        </div>
+    </div>
+</div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card--media-container">
+            <figure class="img-container">
+              <img
+                class="cardimg-style img-3 parallax3"
+                src="./img/personaltrainer.jpg"
+                alt="Man training woman in the gym"
+              />
+            </figure>
+            </div>
+            <div class="card-txt-align p-5">
+              <a>
+                <h5
+                  class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
+                >
+                  Personal Trainer
+                </h5>
+              </a>
+              <p class="card-p mb-3">
+                Need help reaching your goals? Find a personal trainer
+                <span class="font-bold">today!</span>
+              </p>
+              <a
+                href="#contact"
+                class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
+              >
+                More Info
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- SEARCH BAR -->
+      <div class="grid-bigscreen">
+      <section>
+        <article>
+          <div class="form-wrapper">
+            <h2 class="h2-el1 text-xl font-bold">Exercise Search</h2>
+            <div class="input-wrap">
+              <label for="search" class="label-style">Search:</label>
+              <input type="search" id="search" class="input-style" />
+              <button class="submit-btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- SIGN UP FORM -->
+    <section>
+      <article>
+        <div class="form-wrapper">
+          <h2 id="join-us" class="h2-el1 text-xl font-bold">Sign Up Form</h2>
+          <div class="input-wrap">
+            <label for="text" class="label-style">Full Name:</label>
+            <input type="text" class="input-style"/>
+            <label for="email" class="label-style">Email:</label>
+            <input type="email" class="input-style" placeholder="gainsfitness@realemail.com"/>
+            <label for="text" class="label-style">Title:</label>
+            <input type="text" class="input-style"/>
+            <label class="label-style" for="content">Message:</label>
+            <textarea
+            class="input-style"
+              type="text"
+              id="content"
+              name="content"
+              rows="3"
+            ></textarea>
+            <button class="submit-btn ">Submit</button>
+          </form>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+
+    <!-- LOGO ABSOLUTE -->
+<!-- <img src="./img/Gainsfitnesslogo_black.svg" alt="Gains Fitness Logo Black" class="gains-absolute"> -->
+    <!-- CONTACT/FOOTER -->
+      <footer class="footer-style">
+        <div class="contact-wrapper">
+          <h3 id="contact" class="font-bold contact-space text-lg"><em>Contact</em></h3>
+        <h4 class="font-bold">Gains Fitness LLC</h4>
+        <p>206 Alice In Chains Ave</p>
+        <p class="footer-space">Dallas</p>
+        
+        <p class="footer-space">Map (temp)</p>
+
+        <p>E: gainsfitness@realemail.com</p>
+        <p class="footer-space">T: 555-555-5555</p>
+        <p class="footer-space">© 2023 GAINS FITNESS LLC / 206 ALICE IN CHAINS AVE / DALLAS / T 555-555-5555 / E gainsfitness@realemail.com / PRIVACY POLICY</p>
+        <a href="https://www.tiktok.com/@charllydasavior/video/7247042980022914347">Video Credit: <span class="credit-style">Charllydasavior</span></a>
+        </div>
+      </footer>
+    </main>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+
+        let usrScroll = function() {
+
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 270) {
+        return
+        }
+
+        const parallax = document.querySelector('.parallax1');
+        let scrollPosition1 = window.pageYOffset;
+        
+        parallax.style.transform = 'translateY(' + scrollPosition1 *
+        -0.035 + 'px)';
+      };
+      
+      let usrScroll1 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 630) {
+        return
+        }
+
+        // IMG 2 
+        const parallax1 = document.querySelector('.parallax2');
+        let scrollPosition2 = window.pageYOffset;
+        
+        parallax1.style.transform = 'translateY(' + scrollPosition2 *
+        -0.035 + 'px)';
+      };
+      
+      let usrScroll2 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+      if(areWeOnBigScreens.matches == false && window.scrollY < 900) {
+      return
+      }
+        // IMG 3
+        const parallax2 = document.querySelector('.parallax3');
+        let scrollPosition3 = window.pageYOffset;
+        
+        parallax2.style.transform = 'translateY(' + scrollPosition3 *
+        -0.035 + 'px)';
+      };
+
+
+
+
+
+      window.addEventListener("scroll", usrScroll) 
+      window.addEventListener("scroll", usrScroll1) 
+      window.addEventListener("scroll", usrScroll2) 
+      
+
+    // window.scrollY
+    </script>
+  </body>
+</html>
+
