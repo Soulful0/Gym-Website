@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/mediaqueries.css" />
     <link rel="stylesheet" type="text/css" href="./assets/general.css" />
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Khojki&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Khojki&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+    rel="stylesheet"
     />
     <title>Gains Fitness</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -24,14 +27,17 @@
       <header id="header" class="hero">
         <div class="hero-container">
           <div class="hero-media-wrapper" >
-            <video class="hero-media" playsinline="" autoplay="" loop=""><source src=".//img/0326.mp4" type="video/mp4"></video>
+            <!-- <iframe class="hero-media" src=".//img/0326.mp4" playsinline="" allow="muted; autoplay;" loop=""></iframe> -->
+            <video class="hero-media" playsinline="" autoPlay muted loop="">
+              <source src=".//img/0326.mp4" type="video/mp4"/>
+            </video>
           </div>
           <nav class="navigation">
             <ul class="nav-list">
               <li>
                 <div class="hero-logo">
                   <a>
-                    <img src=".//img/Gainsfitnesslogo_white.svg"></img>
+                    <img class="logo-style" src=".//img/Gainsfitnesslogo_white.svg"></img>
                   </a>
                   <!-- <a><h1 class="font-bold text-xl">Gains Fitness</h1></a> -->
                 </div>
@@ -68,11 +74,11 @@
       </section>
       <!-- CARDS -->
       <section>
-        <article>
+      <article class="flex-card-wrapper border-section">
           <!-- Card 1 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
                 class="cardimg-style parallax1 img1"
                 src="./img/calisthenics.jpg"
@@ -80,7 +86,9 @@
               />
             </figure>
           </div>
-            <div class="p-5 about--intro">
+            <div class="card-txt-align p-5 about--intro">
+
+              <div class="a-p-wrap">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -88,7 +96,9 @@
                   Calisthenics
                 </h5>
               </a>
-              <p class="card-p mb-3">Gymnast friendly equipment</p>
+              <p class="card-p mb-3">Gymnast friendly equipment asuhdfpiusahdfpsahdfpiasasdfhaspodhif</p>
+            </div>
+
               <a
                 href="#contact"
                 class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
@@ -116,16 +126,16 @@
           <!-- Card 2 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
-                class="cardimg-style parallax2 img3"
-                src="./img/weighttraining.jpg"
-                alt="Man lifting dumbells doing a pushup
+              class="cardimg-style parallax2 img3"
+              src="./img/weighttraining.jpg"
+              alt="Man lifting dumbells doing a pushup
               workout for chest and tricepts"
               />
             </figure>
             </div>
-            <div class="p-5">
+            <div class="card-txt-align p-5">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -157,6 +167,7 @@
                 </svg>
               </a>
             </div>
+            </div>
             <!-- Main modal -->
 <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-2xl max-h-full">
@@ -187,7 +198,7 @@
     <option value="glutes">Glutes</option>
   </select>
   <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3">
                     Name
@@ -221,15 +232,15 @@
           <!-- Card 3 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
-                class="cardimg-style parallax3 img3"
+                class="cardimg-style img-3 parallax3"
                 src="./img/personaltrainer.jpg"
                 alt="Man training woman in the gym"
               />
             </figure>
             </div>
-            <div class="p-5">
+            <div class="card-txt-align p-5">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -372,6 +383,7 @@
         </article>
       </section>
       <!-- SEARCH BAR -->
+      <div class="grid-bigscreen">
       <section>
         <article>
           <div class="form-wrapper">
@@ -411,6 +423,10 @@
       </div>
     </article>
   </section>
+</div>
+
+    <!-- LOGO ABSOLUTE -->
+<!-- <img src="./img/Gainsfitnesslogo_black.svg" alt="Gains Fitness Logo Black" class="gains-absolute"> -->
     <!-- CONTACT/FOOTER -->
       <footer class="footer-style">
         <div class="contact-wrapper">
@@ -423,20 +439,69 @@
 
         <p>E: gainsfitness@realemail.com</p>
         <p class="footer-space">T: 555-555-5555</p>
-<p>© 2023 GAINS FITNESS LLC / 206 ALICE IN CHAINS AVE / DALLAS / T 555-555-5555 / E gainsfitness@realemail.com / PRIVACY POLICY</p>
+        <p class="footer-space">© 2023 GAINS FITNESS LLC / 206 ALICE IN CHAINS AVE / DALLAS / T 555-555-5555 / E gainsfitness@realemail.com / PRIVACY POLICY</p>
+        <a href="https://www.tiktok.com/@charllydasavior/video/7247042980022914347">Video Credit: <span class="credit-style">Charllydasavior</span></a>
         </div>
       </footer>
     </main>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
-      window.addEventListener('scroll', function() {
-        const parallax = document.querySelector('.parallax1');
-        let scrollPosition = window.pageYOffset;
 
-        parallax.style.transform = 'translateY(' + scrollPosition *
-        .07 + 'px)';
-      })
+        let usrScroll = function() {
+
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 270) {
+        return
+        }
+
+        const parallax = document.querySelector('.parallax1');
+        let scrollPosition1 = window.pageYOffset;
+        
+        parallax.style.transform = 'translateY(' + scrollPosition1 *
+        -0.035 + 'px)';
+      };
+      
+      let usrScroll1 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 630) {
+        return
+        }
+
+        // IMG 2 
+        const parallax1 = document.querySelector('.parallax2');
+        let scrollPosition2 = window.pageYOffset;
+        
+        parallax1.style.transform = 'translateY(' + scrollPosition2 *
+        -0.035 + 'px)';
+      };
+      
+      let usrScroll2 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+      if(areWeOnBigScreens.matches == false && window.scrollY < 900) {
+      return
+      }
+        // IMG 3
+        const parallax2 = document.querySelector('.parallax3');
+        let scrollPosition3 = window.pageYOffset;
+        
+        parallax2.style.transform = 'translateY(' + scrollPosition3 *
+        -0.035 + 'px)';
+      };
+
+
+
+
+
+      window.addEventListener("scroll", usrScroll) 
+      window.addEventListener("scroll", usrScroll1) 
+      window.addEventListener("scroll", usrScroll2) 
+      
+
+    // window.scrollY
     </script>
   </body>
 </html>

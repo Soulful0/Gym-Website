@@ -108,12 +108,29 @@
 
 .card {
   margin: 10px 10px 10px 10px;
-  border-bottom: 0.3rem solid #061621;
-  box-shadow: 5px 3px 2rem #0616212c;
+  padding-top: 0.6rem;
+
+  /* box-shadow: 5px 3px 2rem #0616212c; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: start;
 }
 
 .cardimg-style {
-  padding: 0.6rem;
+  padding: 0rem 0.6rem 0rem 0.6rem;
+  scale: 115% 1.5;
+}
+
+.img-3 {
+  scale: 150% 2;
+}
+
+.a-p-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 107px;
 }
 
 /* Parallax */
@@ -121,6 +138,7 @@
 .card--media-container {
   overflow: hidden;
   width: 100%;
+  height: 300px;
 }
 
 /* About */
@@ -128,7 +146,7 @@
 .about-wrapper {
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 5px 3px 2rem #0616211e;
+  /* box-shadow: 5px 3px 2rem #0616211e; */
 }
 
 .h2-el1 {
@@ -153,7 +171,7 @@
 .form-wrapper {
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 5px 3px 2rem #0616211e;
+  /* box-shadow: 5px 3px 2rem #0616211e; */
 }
 
 .free-style {
@@ -196,7 +214,7 @@
 
 .contact-wrapper {
   padding: 1.6rem;
-  box-shadow: 5px 3px 2rem #0616211e;
+  /* box-shadow: 5px 3px 2rem #0616211e; */
 }
 
 .contact-space {
@@ -205,6 +223,10 @@
 
 .footer-space {
   margin-bottom: 2rem;
+}
+
+.credit-style {
+  border-bottom: 0.1rem solid #faf9f6;
 }
 
 /* Modal */
