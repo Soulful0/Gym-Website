@@ -24,7 +24,10 @@
       <header id="header" class="hero">
         <div class="hero-container">
           <div class="hero-media-wrapper" >
-            <video class="hero-media" playsinline="" autoplay="" loop=""><source src=".//img/0326.mp4" type="video/mp4"></video>
+            <!-- <iframe class="hero-media" src=".//img/0326.mp4" playsinline="" allow="muted; autoplay;" loop=""></iframe> -->
+            <video class="hero-media" playsinline="" autoPlay muted loop="">
+              <source src=".//img/0326.mp4" type="video/mp4"/>
+            </video>
           </div>
           <nav class="navigation">
             <ul class="nav-list">
@@ -68,11 +71,11 @@
       </section>
       <!-- CARDS -->
       <section>
-        <article>
+      <article class="flex-card-wrapper border-section">
           <!-- Card 1 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
                 class="cardimg-style parallax1 img1"
                 src="./img/calisthenics.jpg"
@@ -80,7 +83,9 @@
               />
             </figure>
           </div>
-            <div class="p-5 about--intro">
+            <div class="card-txt-align p-5 about--intro">
+
+              <div class="a-p-wrap">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -88,7 +93,9 @@
                   Calisthenics
                 </h5>
               </a>
-              <p class="card-p mb-3">Gymnast friendly equipment</p>
+              <p class="card-p mb-3">Gymnast friendly equipment asuhdfpiusahdfpsahdfpiasasdfhaspodhif</p>
+            </div>
+
               <a
                 href="#contact"
                 class="info-btn inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg"
@@ -116,7 +123,7 @@
           <!-- Card 2 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
                 class="cardimg-style parallax2 img3"
                 src="./img/weighttraining.jpg"
@@ -125,7 +132,7 @@
               />
             </figure>
             </div>
-            <div class="p-5">
+            <div class="card-txt-align p-5">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -221,15 +228,15 @@
           <!-- Card 3 -->
           <div class="card">
             <div class="card--media-container">
-            <figure>
+            <figure class="img-container">
               <img
-                class="cardimg-style parallax3 img3"
+                class="cardimg-style img-3 parallax3"
                 src="./img/personaltrainer.jpg"
                 alt="Man training woman in the gym"
               />
             </figure>
             </div>
-            <div class="p-5">
+            <div class="card-txt-align p-5">
               <a>
                 <h5
                   class="card-h5 text-center mb-2 text-2xl font-bold tracking-tight"
@@ -267,6 +274,7 @@
         </article>
       </section>
       <!-- SEARCH BAR -->
+      <div class="grid-bigscreen">
       <section>
         <article>
           <div class="form-wrapper">
@@ -306,6 +314,10 @@
       </div>
     </article>
   </section>
+</div>
+
+    <!-- LOGO ABSOLUTE -->
+<img src="./img/Gainsfitnesslogo_black.svg" alt="Gains Fitness Logo Black" class="gains-absolute">
     <!-- CONTACT/FOOTER -->
       <footer class="footer-style">
         <div class="contact-wrapper">
@@ -325,14 +337,63 @@
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
-      window.addEventListener('scroll', function() {
-        const parallax = document.querySelector('.parallax1');
-        let scrollPosition = window.pageYOffset;
 
-        parallax.style.transform = 'translateY(' + scrollPosition *
-        .07 + 'px)';
-      })
+        let usrScroll = function() {
+
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 270) {
+        return
+        }
+
+        const parallax = document.querySelector('.parallax1');
+        let scrollPosition1 = window.pageYOffset;
+        
+        parallax.style.transform = 'translateY(' + scrollPosition1 *
+        -0.05 + 'px)';
+      };
+      
+      let usrScroll1 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+        if(areWeOnBigScreens.matches == false && window.scrollY < 630) {
+        return
+        }
+
+        // IMG 2 
+        const parallax1 = document.querySelector('.parallax2');
+        let scrollPosition2 = window.pageYOffset;
+        
+        parallax1.style.transform = 'translateY(' + scrollPosition2 *
+        -0.05 + 'px)';
+      };
+      
+      let usrScroll2 = function() {
+        let areWeOnBigScreens = window.matchMedia("(min-width:1011px)");
+
+      if(areWeOnBigScreens.matches == false && window.scrollY < 870) {
+      return
+      }
+        // IMG 3
+        const parallax2 = document.querySelector('.parallax3');
+        let scrollPosition3 = window.pageYOffset;
+        
+        parallax2.style.transform = 'translateY(' + scrollPosition3 *
+        -0.05 + 'px)';
+      };
+
+
+
+
+
+      window.addEventListener("scroll", usrScroll) 
+      window.addEventListener("scroll", usrScroll1) 
+      window.addEventListener("scroll", usrScroll2) 
+      
+
+    // window.scrollY
     </script>
   </body>
 </html>
 
+git
