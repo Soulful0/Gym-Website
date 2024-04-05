@@ -229,6 +229,12 @@
   border-bottom: 0.1rem solid #faf9f6;
 }
 
+#map {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
 /* Modal */
 .flex-adj {
   /* display: flex; */
