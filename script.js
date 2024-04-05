@@ -31,3 +31,31 @@ exerciseForm.addEventListener("change", function (event) {
     },
   });
 });
+
+function initMap() {
+  let location = {lat:32.97775321119118, lng: -96.76926394878767};
+  let map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: location
+  });
+}
+
+function calculateDistance() {
+  const origin = document.getElementById('zipcode').value;
+  const destination = {lat:32.97775321119118, lng: -96.76926394878767};
+
+  const service = new google.maps.DistanceMatrixService();
+  service.getDistanceMatrix({
+      origins: [origin],
+      destinations: [destination],
+      travelMode: 'DRIVING',
+      unitSystem: google.maps.UnitSystem.IMPERIAL, 
+  }, function(response, status) {
+      if (status === 'OK') {
+          var distance = response.rows[0].elements[0].distance.text;
+          document.getElementById('distance-result').innerText = 'Distance: ' + distance;
+      } else {
+          alert('Error: ' + status);
+      }
+  });
+}

@@ -378,8 +378,11 @@
         <p>206 Alice In Chains Ave</p>
         <p class="footer-space">Dallas</p>
 
-        <div id="map" style="width: 400px; height: 300px; position: relative; overflow: hidden;"></div>
-        <p class="footer-space">Map (temp)</p>
+        <p>Location</p>
+        <div id="map"></div>
+        <input type="text" id="zipcode" placeholder="Enter ZIP code">
+        <button onclick="calculateDistance()">Calculate Distance</button>
+        <div id="distance-result"></div>
 
         <p>E: gainsfitness@realemail.com</p>
         <p class="footer-space">T: 555-555-5555</p>
@@ -447,19 +450,9 @@
 
     // window.scrollY
     </script>
-     <script>
-      function initMap() {
-          let location = {lat:32.97775321119118, lng: -96.76926394878767};
-          let map = new google.maps.Map(document.getElementById("map"), {
-              zoom: 14,
-              center: location
-          });
-      }
-          </script>
-      
-        <script async defer
-           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBif9OrwrjM-ncLNIXsPY_SX-X_M-E7-T0&loading=async&callback=initMap">
-         </script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBif9OrwrjM-ncLNIXsPY_SX-X_M-E7-T0&loading=async&callback=initMap">
+    </script>
       
   </body>
 </html>
