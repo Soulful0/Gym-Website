@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    background-color: #153656;
+}
+
+img {
+    width: 120px;
+    height: 119px;
+}
+
+#thank-you {
+    text-align: center;
+    min-height: 300px;
+    margin-bottom: 0;
+    background-image: url('https://cdn-ami-drupal.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/Dumbbell-incline-press-1109.jpg?itok=IfvdpQh-');
+    background-size: cover;
+    background-position: center;
+    height: 770px;
+
+  }
+
+#thank-you h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+    padding-top: 20px; 
+
+}
+
+h2, #thank-you p {
+    text-align: center;
+    color: #153656;
+    background-color: #b32522;
+    padding: 50px 80px;
+    width: 20%; 
+    margin: 0 15% 0; 
+    position: relative; /* Set the position to relative */
+    top: 80px;
+}
+
+#thank-you p {
+    font-size: 18px;
+    padding-top: 0; 
+}
+
+.nav-container {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+  
+.nav-container ul {
+    list-style: none; 
+}
+
+a[href="#contact"] {
+    font-size: 20px;
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-style {
+    color: #faf9f6;
+    background-color: #153656;
+   
+  }
+  
+.contact-wrapper {
+    padding: 1.6rem;
+    box-shadow: 5px 3px 2rem #0616211e;
+  }
+  
+.contact-space {
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-space {
+    margin-bottom: 2rem;
+  }
+
+
+
+
+
+
