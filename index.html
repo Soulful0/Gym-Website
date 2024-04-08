@@ -379,8 +379,12 @@
         <h4 class="font-bold">Gains Fitness LLC</h4>
         <p>206 Alice In Chains Ave</p>
         <p class="footer-space">Dallas</p>
-        
-        <p class="footer-space">Map (temp)</p>
+
+        <p id="location">Location</p>
+        <div id="map"></div>
+        <input type="text" id="zipcode" placeholder="Enter ZIP code">
+        <button id="map-button" onclick="calculateDistance()">Calculate Distance</button>
+        <div id="distance-result"></div>
 
         <p>E: gainsfitness@realemail.com</p>
         <p class="footer-space">T: 555-555-5555</p>
@@ -448,6 +452,10 @@
 
     // window.scrollY
     </script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBif9OrwrjM-ncLNIXsPY_SX-X_M-E7-T0&loading=async&callback=initMap">
+    </script>
+      
   </body>
 </html>
 

@@ -230,6 +230,41 @@
   border-bottom: 0.1rem solid #faf9f6;
 }
 
+#location {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#map {
+  height: 300px;
+  width: 30%;
+  position: relative;
+  z-index: 1;
+}
+
+#zipcode {
+  color: black;
+}
+
+#distance-result {
+  color: white;
+  font-weight: 800;
+  width: 200px;
+  padding: 5px;  
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  top: -370px; 
+  left: 280px; 
+}
+
+#map-button {
+  transition: font-weight 0.3 s ease;
+}
+#map-button:hover {
+ font-weight: 600;
+ text-shadow: 5px 5px 5px black;
+}
 /* Modal */
 .flex-adj {
   /* display: flex; */
