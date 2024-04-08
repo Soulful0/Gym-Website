@@ -15,6 +15,7 @@ To access the project content:
     2. Use comand git clone to clone the repo
    ```
     3. Use this link to access the deployed webpage:
+    https://soulful0.github.io/Gym-Website/
    ```
 ## Usage
 
@@ -72,3 +73,7 @@ Here is an example of what the mentioned sectionsof this webpage looks like:
 [Google Maps APIs](https://developers.google.com/maps/documentation/javascript/overview)
 
 [Stack Overflow](https://stackoverflow.com/questions/36795150/uncaught-invalidvalueerror-initmap-is-not-a-function#comment109336976_59711008)
+
+[Tailwind](https://tailwindcss.com/)
+
+[API Ninjas](https://api-ninjas.com/)
