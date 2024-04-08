@@ -38,6 +38,12 @@ function initMap() {
       zoom: 14,
       center: location
   });
+
+  const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    title: 'Gains Fitness'
+  });
 }
 
 function calculateDistance() {
@@ -59,3 +65,7 @@ function calculateDistance() {
       }
   });
 }
+
+document.getElementById("toggle-button").addEventListener("click", function() {
+  this.classList.toggle("toggled");
+});
